@@ -2,6 +2,10 @@
 
 All notable changes to `filament-code-editor` will be documented in this file.
 
+## 1.2.0 - 2023-09-01
+
+Initial release from forked package
+
 ## 1.1.5 - 2023-04-06
 
 ### What's Changed
