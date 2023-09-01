@@ -1,6 +1,6 @@
 <?php
 
-namespace SebastiaanKloos\FilamentCodeEditor\Components;
+namespace AsevenTeam\FilamentCodeEditor\Components;
 
 use Filament\Forms\Components\Field;
 

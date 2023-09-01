@@ -1,17 +1,20 @@
 {
-    "name": "sebastiaankloos/filament-code-editor",
+    "name": "aseven-team/filament-code-editor",
     "description": "Code editor for Filament",
     "keywords": [
-        "SebastiaanKloos",
         "laravel",
         "filament-code-editor"
     ],
-    "homepage": "https://github.com/sebastiaankloos/filament-code-editor",
+    "homepage": "https://github.com/aseven-team/filament-code-editor",
     "license": "MIT",
     "authors": [
         {
             "name": "Sebastiaan Kloos",
             "email": "sebastiaankloos@pm.me",
+            "role": "Original Developer"
+        },
+        {
+            "name": "Muhajir",
             "role": "Developer"
         }
     ],
@@ -35,13 +38,13 @@
     },
     "autoload": {
         "psr-4": {
-            "SebastiaanKloos\\FilamentCodeEditor\\": "src",
-            "SebastiaanKloos\\FilamentCodeEditor\\Database\\Factories\\": "database/factories"
+            "AsevenTeam\\FilamentCodeEditor\\": "src",
+            "AsevenTeam\\FilamentCodeEditor\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SebastiaanKloos\\FilamentCodeEditor\\Tests\\": "tests"
+            "AsevenTeam\\FilamentCodeEditor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -59,7 +62,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SebastiaanKloos\\FilamentCodeEditor\\FilamentCodeEditorServiceProvider"
+                "AsevenTeam\\FilamentCodeEditor\\FilamentCodeEditorServiceProvider"
             ]
         }
     },

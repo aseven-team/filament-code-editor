@@ -1,10 +1,12 @@
 <?php
 
-namespace SebastiaanKloos\FilamentCodeEditor\Tests;
+namespace AsevenTeam\FilamentCodeEditor\Tests;
 
+use Filament\FilamentServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use SebastiaanKloos\FilamentCodeEditor\FilamentCodeEditorServiceProvider;
+use AsevenTeam\FilamentCodeEditor\FilamentCodeEditorServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,13 +15,15 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'SebastiaanKloos\\FilamentCodeEditor\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'AsevenTeam\\FilamentCodeEditor\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
+            LivewireServiceProvider::class,
+            FilamentServiceProvider::class,
             FilamentCodeEditorServiceProvider::class,
         ];
     }
